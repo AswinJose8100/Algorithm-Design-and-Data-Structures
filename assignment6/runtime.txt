@@ -1,0 +1,29 @@
+BitFlip
+
+The mutate function in this class only has simple complexity by using if and else and return individual object. 
+
+Therefore the complexity is O(1)
+
+BitFlipProb
+
+for(int j=0;j<base.getLength();j++) is a loop in the muta function.
+Let base.getLength() be a variable n. It has if and else but for loop is more complex.
+
+Therefore the complexity is O(n)
+
+Rearrange
+
+for(int j=0;j<num;j++)
+for(int j=0;j<base.getLength()-num;j++)
+for(int j=0;j<base.getLength()-num;j++)
+
+The mutate function has 3 for loops and let base.getLength() be variable n
+
+so the complexity is
+O(num)*O(n^2)
+
+Mutator
+
+The mutate just returns the object of Individual thus the complexity is
+O(1)
+
